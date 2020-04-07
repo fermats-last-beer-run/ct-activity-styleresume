@@ -8,13 +8,16 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 
 html, body {
+	font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
 	font-size: 16px;
 }
 
 .clear {
 	clear: both;
 }
-
+h1, h2 {
+	font-family: 'Rokkit', 'Times New Roman', serif
+}
 p {
 	font-size: 1em;
 	line-height: 1.4em;
@@ -28,10 +31,16 @@ p {
 }
 
 .mainDetails {
+	border-bottom: solid #cf8a05;
 	padding: 25px 35px;
 }
 
+.mainDetails ul, a {
+	color: #444444;
+}
+
 #name h1 {
+	color: #181818;
 	font-size: 2.5em;
 	font-weight: 700;
 	margin-bottom: -6px;
@@ -44,6 +53,18 @@ p {
 
 #mainArea {
 	padding: 0 40px;
+}
+
+#mainArea h1 {
+	color: #cf8a05;
+}
+
+#mainArea h2 {
+	color: #181818;
+}
+
+#mainArea p {
+	color: #444444;
 }
 
 #headshot {
@@ -85,7 +106,9 @@ p {
 
 section {
 	padding: 20px 0 0;
+	border-bottom: solid 1px #dedede;
 }
+
 
 section:first-child {
 	border-top: 0;

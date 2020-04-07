@@ -1,21 +1,95 @@
 .clear {
 	clear: both;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rokkitt&display=swap');
+
+body {
+	font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+	width: 90%;
+	max-width: 800px;
+	margin: 30px auto;
+}
+
+p {
+	color: #444;
+}
+
+section{
+	border-bottom: solid 1px #dedede;
+	padding-bottom: 20px;
+	margin: 0 0 15px;
+}
+
+.mainDetails {
+	border-bottom: solid #cf8a05;
+	margin-bottom: 15px;
+}
+
+.mainDetails ul, a {
+	color: #444444;
+	list-style: none;
+	text-decoration: none;
+}
 
 #headshot {
 	width: 12.5%;
 	float: left;
-	margin-right: 30px;
 }
 
+#headshot img {
+	border-radius: 50%;
+	margin-left: 35%; 
+	width: 80%;
+}
+h1, h2 {
+	font-family: 'Rokkitt', 'Times New Roman', Times, serif;
+}
 #name {
+	font-size: 18px;
 	float: left;
+	margin: 5px 30px 25px;
+}
+
+#name h1 {
+	margin: 0;
+}
+
+#name h2 {
+	margin: 0;
 }
 
 #contactDetails {
 	float: right;
 }
 
+#mainArea {
+	margin: 0 auto;
+	line-height: 1.3em;
+}
+
+#mainArea h1 {
+	color: #cf8a05;
+	font-size: 24px;
+	font-style: italic;
+}
+
+#mainArea h2 {
+	color: #181818;
+	font-size: 22px;
+}
+
+section:nth-child(even) h2 {
+	margin-bottom: 0;
+}
+
+section:nth-child(even) p:last-of-type {
+	margin-top: 10px;
+}
+section:nth-child(even) p:first-of-type{
+	margin: 5px 0 0 0;
+	font-style: italic;
+	font-size: 14px;
+}
 .sectionTitle {
 	float: left;
 	width: 25%;
@@ -24,4 +98,19 @@
 .sectionContent {
 	float: right;
 	width: 72.5%;
+}
+
+section ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+}
+
+.keySkills li {
+	color: #444444;
+	margin: 0;
+	padding: 0;
+	flex: 25%; 
 }
